@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // перенаправление ссылок
 app.get("/map", (req, res) => {
-    res.sendFile(path.join(__dirname, "public/html/bot/bot_main.html"));
+    res.sendFile(path.join(__dirname, "public/html/map.html"));
 });
 // app.get("/list", (req, res) => {
 //     res.sendFile(path.join(__dirname, "public/html/list.html"));
