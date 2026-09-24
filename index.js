@@ -1,6 +1,7 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
+import { createRoot } from "react-dom/client"
 
 
 const app = express();
@@ -13,9 +14,9 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, "public")));
 
 // перенаправление ссылок
-// app.get("/bot", (req, res) => {
-//     res.sendFile(path.join(__dirname, "public/html/bot/bot_main.html"));
-// });
+app.get("/map", (req, res) => {
+    res.sendFile(path.join(__dirname, "public/html/bot/bot_main.html"));
+});
 // app.get("/list", (req, res) => {
 //     res.sendFile(path.join(__dirname, "public/html/list.html"));
 // });

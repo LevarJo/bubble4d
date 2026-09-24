@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/LevarJo/bubble4d#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
